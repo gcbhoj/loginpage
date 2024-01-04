@@ -1,0 +1,221 @@
+.container {
+  display: grid;
+  grid-template-rows: 0.45fr 0.01fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "head"
+    "navigation"
+    "main"
+    "foot";
+  border-style: solid;
+}
+
+.head {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2.5fr 2fr;
+  grid-template-areas: "headlogo motto userinfo";
+  border-style: solid;
+  background-color: rgb(206, 209, 211);
+}
+
+.headlogo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+}
+
+.motto {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "sloganI"
+    "sloganII"
+    "sloganIII";
+  grid-gap: 10px;
+}
+
+.sloganI,
+.sloganII,
+.sloganIII {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  border-style: solid;
+  text-shadow: darkgray;
+  font-weight: bolder;
+  text-shadow: 1px 1px;
+  font-size: x-large;
+}
+.sloganI {
+  font-size: 20px;
+  box-shadow: 5px 5px 5px 5px rgb(42, 41, 41);
+}
+
+.sloganII {
+  padding-left: 50px;
+  font-size: 20px;
+  box-shadow: 5px 5px 5px 2px rgb(42, 41, 41);
+}
+
+.sloganIII {
+  padding-left: 150px;
+  font-size: 20px;
+  box-shadow: 5px 5px 5px 5px rgb(42, 41, 41);
+}
+.userinfo {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "profile"
+    "datetime";
+}
+.datetime {
+  display: flex;
+  border-style: solid;
+  flex-direction: row;
+  justify-content: center;
+}
+#currentDateTime {
+  font-size: 16px;
+}
+.navigation {
+  display: flex;
+  border-style: solid;
+  justify-content: space-around;
+  background-color: rgb(234, 242, 249);
+}
+.nav {
+  text-decoration: none;
+  color: rgb(62, 58, 58);
+}
+.nav:hover {
+  color: rgb(20, 187, 187);
+  text-transform: uppercase;
+  font-size: large;
+  text-shadow: 5px 5px 5px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 2px 2px;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "myform"
+    "newuser";
+  border-style: solid;
+  padding: 50px;
+  justify-content: space-evenly;
+  background-color: rgb(192, 240, 246);
+}
+.myform {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgb(192, 240, 246);
+  justify-content: center;
+}
+
+#username,
+#password {
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 2px;
+  border-radius: 10px;
+  height: 24px;
+  width: 180px;
+  color: rgb(94, 124, 124);
+  text-shadow: -5px 5px 5px;
+  font-weight: bold;
+}
+
+.uname,
+.pword {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+
+  text-shadow: 1px 1px 1px;
+}
+
+.newuser {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  padding: 100px;
+}
+#btnlogin {
+  display: flex;
+  border: solid rgb(125, 186, 126);
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  background-color: rgb(108, 192, 24);
+  font-style: italic;
+  width: fit-content;
+  border-radius: 10px;
+}
+#btnlogin:hover {
+  box-shadow: -5px 5px 5px 5px rgba(85, 85, 84, 0.948);
+}
+.register {
+  text-decoration: none;
+  color: black;
+  border: solid rgb(18, 171, 214);
+  background-color: rgb(18, 171, 214);
+  border-radius: 25px;
+  font-style: italic;
+}
+.register:hover {
+  box-shadow: 5px 5px 5px 5px rgb(9, 21, 24);
+}
+.foot {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "qlinks copyright weather";
+  background-color: rgba(157, 158, 159, 0.271);
+}
+.footnav {
+  text-decoration: none;
+  color: black;
+}
+.qlinks {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  justify-content: space-evenly;
+}
+.copyright {
+  display: flex;
+}
+.weather {
+  display: flex;
+  justify-content: center;
+}
+#backtotop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000000;
+  counter-reset: #0d0d0d;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+#backtotop:hover {
+  background-color: #2980b9;
+}
