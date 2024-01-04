@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="script/login.js"></script>
+  </head>
+  <body class="container">
+    <header class="head">
+      <div class="headlogo">
+        <img
+          src="images/hana-trans-inc-high-resolution-logo-transparent.png"
+          alt="logo"
+          width="200px"
+          height="200px"
+        />
+      </div>
+      <div class="motto">
+        <div class="sloganI">
+          <p><i>Reliable Journeys</i></p>
+        </div>
+        <div class="sloganII">
+          <p><i>Seamless Transitions: Hana Trans Inc.</i></p>
+        </div>
+        <div class="sloganIII">
+          <p><i>Your Trusted Travel Partner</i></p>
+        </div>
+      </div>
+      <div class="userinfo">
+        <div class="profile">
+          <h2 id="userProfile">Welcome, <span id="userName"></span>!</h2>
+        </div>
+        <div class="datetime"><h1 id="currentDateTime"></h1></div>
+      </div>
+    </header>
+    <div class="navigation">
+      <a class="nav" href="home.html"> Home</a>
+      <a class="nav" href="services.html"> Services</a>
+      <a class="nav" href="login.html"> Log In</a>
+      <a class="nav" href="contact.html"> Contact Us</a>
+    </div>
+    <div class="main">
+      <div class="myform">
+        <form name="myform" id="loginForm" method="get">
+          <label class="uname"
+            >Username: <input type="text" id="username" /></label
+          ><br /><br />
+          <label class="pword"
+            >Password: &nbsp;<input type="password" id="password" /></label
+          ><br /><br />
+          <span id="msg"></span>
+          <input type="checkbox" id="rememberme" value="rememberme" /><i
+            >Remember Me</i
+          ><span id="msg"></span> <br /><br />
+          <input type="submit" id="btnlogin" name="button" value="LOG IN" />
+        </form>
+      </div>
+      <div class="newuser">
+        <p>
+          <i>New Customer:</i>
+          <a class="register" href="registration.html"> Register Here</a>
+        </p>
+      </div>
+    </div>
+    <footer class="foot">
+      <div class="qlinks">
+        <a class="footnav" href="home.html"> Home</a>
+        <a class="footnav" href="services.html"> Services</a>
+        <a class="footnav" href="login.html"> Log In</a>
+        <a class="footnav" href="contact.html"> Contact Us</a>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Hana Trans Inc. All Rights Reserved.</p><br><br>
+        <a id="backtotop" href="#">Top</a>
+        
+      </div>
+      
+    </footer>
+  </body>
+</html>
